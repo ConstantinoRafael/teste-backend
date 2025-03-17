@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import userRoutes from "./routes/userRoutes";
+import { initializeDatabase } from "./config/db";
 
 dotenv.config();
 
@@ -17,6 +18,12 @@ app.get("/ping", (req, res) => {
   return res.send("pong");
 });
 
-app.listen(port, () => {
-  console.log(`Escutando na porta ${port}`);
-});
+initializeDatabase()
+  .then(() => {
+    app.listen(port, () => {
+      console.log(`🚀 Servidor rodando na porta ${port}`);
+    });
+  })
+  .catch((err) => {
+    console.error("❌ Falha ao iniciar o banco de dados:", err);
+  });
