@@ -1,8 +1,8 @@
 export interface User {
   id?: number;
-  person_type: EPersonType
+  person_type: EPersonType;
   cnpj?: string;
-  responsibleCpf?: string;   
+  responsibleCpf?: string;
   name: string;
   mobile?: string;
   phone?: string;
@@ -14,12 +14,12 @@ export interface User {
   city?: string;
   neighborhood?: string;
   state?: string;
-  termos?: boolean;
+  terms?: boolean;
   createdAt?: Date;
   updatedAt?: Date;
 }
 
 const enum EPersonType {
-  PHYSICS = 'PHYSICS',
-  JURIDIC = 'JURIDIC'
+  PHYSICS = "PHYSICS",
+  JURIDIC = "JURIDIC",
 }
