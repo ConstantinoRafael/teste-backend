@@ -8,8 +8,10 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "cpf-cnpj-validator": "^1.0.3",
     "dotenv": "^16.4.7",
     "express": "^4.17.3",
+    "joi": "^17.13.3",
     "mysql2": "^3.13.0"
   },
   "devDependencies": {
