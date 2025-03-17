@@ -9,7 +9,7 @@ Este é um projeto backend desenvolvido com **Node.js**, **Express**, **MySQL** 
 ### 📌 **1. Clonar o Repositório**
 
 ```sh
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/ConstantinoRafael/teste-backend.git
 cd teste-backend
 ```
 
@@ -87,11 +87,3 @@ O servidor iniciará na porta **`4568`**.
 
 ---
 
-## 📜 **Licença**
-
-Este projeto é de uso livre. 🚀
-
----
-
-Agora você pode simplesmente rodar os comandos e a API estará pronta para uso!  
-Se precisar de mais alguma modificação, me avise. 💡
